@@ -32,3 +32,92 @@
     }
   }
   
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Fundal modern, deschis */
+  }
+  
+  .cat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff; /* Fundal alb pentru card */
+    border-radius: 15px; /* Colțuri rotunjite */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Umbră discretă */
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .cat-image {
+    width: 100%;
+    max-width: 400px; /* Dimensiune maximă */
+    border-radius: 15px; /* Colțuri rotunjite */
+    margin-bottom: 20px; /* Spațiu sub imagine */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Umbră pentru efect 3D */
+  }
+  
+  .cat-details h2 {
+    font-size: 24px; /* Titlu mai mare */
+    margin-bottom: 10px; /* Spațiu sub titlu */
+    color: #2c3e50; /* Culoare modernă, întunecată */
+  }
+  
+  .cat-details p {
+    font-size: 16px;
+    color: #7f8c8d; /* Culoare neutră */
+    line-height: 1.6; /* Înălțime a liniei pentru lizibilitate */
+    margin: 5px 0;
+  }
+  
+  .cat-details p strong {
+    color: #34495e; /* Evidențiere pentru cuvinte importante */
+  }
+  
+  .breed-select {
+    width: 100%;
+    max-width: 400px; /* Dimensiune maximă */
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Bordură subtilă */
+    border-radius: 10px; /* Colțuri rotunjite */
+    margin-bottom: 20px; /* Spațiu sub dropdown */
+    background: #ffffff; /* Fundal alb */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Umbră discretă */
+  }
+  
+  .loader {
+    font-size: 18px;
+    color: #3498db; /* Albastru modern */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error {
+    color: #e74c3c; /* Roșu pentru eroare */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .cat-container {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
